@@ -1,0 +1,128 @@
+.App {
+  background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+  background-position: left top, right bottom;
+  background-repeat: no-repeat, no-repeat;
+  display: flex;
+  flex-direction: column;
+  padding: 6rem 8rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  justify-content: space-between;
+}
+
+.header {
+  width: 40%;
+  margin-bottom: 3rem;
+}
+
+.title {
+  color:hsl(300, 43%, 22%);
+  font-weight: 700;
+  font-size: 42px;
+  margin-bottom: 4px;
+}
+
+.titleBody {
+  color: hsl(303, 10%, 53%)
+}
+
+.review {
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 3px;
+  margin: 8px;
+  padding: 16px;
+  /* display: flex; */
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 420px;
+}
+
+.review:first-child {
+  margin-left: -64px;
+}
+
+.review:nth-child(2) {
+  margin-left: -32px;
+}
+
+.star {
+  margin: 0 4px;
+}
+
+.reviewBody {
+  color:hsl(300, 43%, 22%);
+  font-weight: 700;
+  margin: 0 16px;
+}
+
+.bottom {
+  height: 0%;
+}
+
+.card {
+  background-color: hsl(300, 43%, 22%);
+  color: hsl(0, 0%, 100%);
+  margin-right: 16px;
+  border-radius: 8px;
+  padding: 2rem; 
+  font-size: 12px;
+  font-weight: 400;
+  height: 164px;
+}
+
+.card:nth-child(2) {
+  margin-top: 32px;
+}
+
+.card:last-child {
+  margin-top: 48px;
+}
+ 
+.cardTitle {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 16px;
+  font-size: 13px;
+}
+
+.profile {
+  border-radius: 100%;
+  height: 32px;
+  margin-right: 16px;
+}
+
+.userType {
+  color: hsl(333, 80%, 67%);
+}
+
+.cardBody {
+  font-weight: 400;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position:absolute;
+  bottom: 0;
+  width: 100vw;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 480px) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
